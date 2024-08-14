@@ -11,7 +11,7 @@ function IMC (){
 
 
     if (verificaPesoValido && verificaAlturaValida){
-        let resultado = Math.round(calculaIMC(peso, altura),1);
+        let resultado = calculaIMC(peso, altura);
         let statusIMC = retornaStatusIMC(resultado);
 
         console.log("\nSeu IMC: "+resultado+" e você está "+statusIMC);
